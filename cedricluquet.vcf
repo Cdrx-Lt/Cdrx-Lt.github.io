@@ -3,7 +3,7 @@ VERSION:3.0
 N:Luquet;Cédric;;;
 FN:Cédric Luquet
 ORG:NAMIXIS & SSICOOR
-ADR;TYPE=WORK:------ 605 Avenue des Romarins - ZAC St Antoine ------        
+ADR;TYPE=WORK:605 Avenue des Romarins - ZAC St Antoine,
 34130 Saint Aunès 
 TITLE:Coordinateur SSI / Chargé d'Affaires
 TEL;TYPE=CELL:0633029207
@@ -13,8 +13,8 @@ TEL;TYPE=MSG:
 EMAIL;TYPE=WORK:cedric.luquet@groupesystea.com
 URL;TYPE=Digital Business Card:
 URL:
-URL;TYPE=Location:https://maps.app.goo.gl/u3acTbmUJGrbBYjQ7
+
 KEY;TYPE=PGP;ENCODING=b:
 NOTE:
-UID:EnBizCard-100441063
+UID:EnBizCard-100024821
 END:VCARD
