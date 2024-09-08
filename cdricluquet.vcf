@@ -1,21 +1,14 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Luquet;Cédric;;;
-FN:Cédric Luquet
-ORG:NAMIXIS & SSICOOR
-ADR;TYPE=WORK:605 Av. des Romarins, 34130 Saint-Aunès
-
-TITLE:Coordinateur SSI / Chargé d'Affaires
+FN;CHARSET=UTF-8:Cédric Luquet
+N;CHARSET=UTF-8:Luquet;Cédric;;;
+EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:cedric.luquet@groupesystea.com
 TEL;TYPE=CELL:0633029207
-TEL;TYPE=WORK:0986188484
-TEL;TYPE=HOME:
-TEL;TYPE=MSG:
-EMAIL;TYPE=WORK:cedric.luquet@groupesystea.com
-URL;TYPE=Digital Business Card:
-URL:
-URL;TYPE=Location:https://maps.app.goo.gl/ohiX4C5E7hupfKUN7
-URL;TYPE=LinkedIn:https://linkedin.com/in/cédric-luquet
-KEY;TYPE=PGP;ENCODING=b:
-NOTE:
-UID:EnBizCard-100638525
+TEL;TYPE=WORK,VOICE:0986188484
+ADR;CHARSET=UTF-8;TYPE=WORK:;;605 Av. des Romarins;Saint-Aunès;Hérault;34130;France
+TITLE;CHARSET=UTF-8:Coordinateur SSI
+ROLE;CHARSET=UTF-8:Chargé d'Affaires
+ORG;CHARSET=UTF-8:Namixis & SSICoor
+X-SOCIALPROFILE;TYPE=linkedin:https://linkedin.com/in/cédric-luquet
+REV:2024-09-08T19:10:26.961Z
 END:VCARD
