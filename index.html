@@ -41,28 +41,28 @@
         <a href="cedric-luquet.vcf" download="cedric-luquet.vcf" class="vcardd"><button class="btn-vcard"><i class="fas fa-download"></i> Télécharger vCard</button></a>
     </div>
     <!-- Contenu de la vCard -->
-    <a id="vcard-content" style="display: none;">BEGIN:VCARD
-        VERSION:3.0
-        FN:Cédric Luquet
-        ORG:Namixis & SSICoor
-        TITLE:Coordinateur SSI / Chargé d'Affaires
-        TEL;TYPE=work,voice:+33 6 33 02 92 07
-        EMAIL;TYPE=internet:cedric.luquet@groupesystea.com
-        URL:https://www.namixis.com
-        END:VCARD</a>
+    <a id="vcard-content" style="display: none;" charset="UTF-8">BEGIN:VCARD
+VERSION:3.0
+FN:Cédric Luquet
+ORG:Namixis & SSICoor
+TITLE:Coordinateur SSI / Chargé d'Affaires
+TEL;TYPE=work,voice:+33 6 33 02 92 07
+EMAIL;TYPE=internet:cedric.luquet@groupesystea.com
+URL:https://www.namixis.com
+END:VCARD</a>
         
-            <script>
-                // Générer et télécharger la vCard dynamiquement
-                const downloadLink = document.querySelector('.vcardd');
-                const vCardContent = document.querySelector('#vcard-content').textContent;
-        
-                // Créer un fichier blob contenant le texte de la vCard
-                const blob = new Blob([vCardContent], { type: 'text/vcard' });
-                const url = URL.createObjectURL(blob);
-        
-                // Mettre à jour le lien de téléchargement avec l'URL du blob
-                downloadLink.href = url;
-            </script>
+    <script>
+        // Générer et télécharger la vCard dynamiquement
+        const downloadLink = document.querySelector('.vcardd');
+        const vCardContent = document.querySelector('#vcard-content').textContent;
+
+        // Créer un fichier blob contenant le texte de la vCard
+        const blob = new Blob([vCardContent], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+
+        // Mettre à jour le lien de téléchargement avec l'URL du blob
+        downloadLink.href = url;
+    </script>
         
     <script src="script.js"></script>
 
