@@ -58,7 +58,7 @@ body {
 .logo img {
     width: 360px; 
     margin-bottom: 20px;
-    border-radius: 45%;
+    border-radius: 40%;
     transition: transform 0.4s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
