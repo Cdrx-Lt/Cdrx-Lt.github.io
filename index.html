@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cédric Luquet</title>
+    <title>Télécharger vCard</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
     <div class="card-container">
         <div class="logo">
-            <img src="logo.png" alt="Logo de l'entreprise">
+            <img src="logo.jpg" alt="Logo de l'entreprise">
         </div>
-
         <div class="card-info">
             <h2>Luquet Cédric</h2>
             <p class="job-title">Coordinateur SSI / Chargé d'Affaires</p>
-            <p class="company-address"><i class="fas fa-map-marker-alt"></i> 605 avenue des Romarins, 34130 Saint-Aunes</p>
+            <p class="company-address contact-item">
+                <a href="https://www.google.com/maps?q=605+avenue+des+Romarins,+34130+Saint-Aunes" target="_blank">
+                    <i class="fas fa-map-marker-alt"></i> 605 avenue des Romarins, 34130 Saint-Aunes
+                </a>
+            </p>
         </div>
-
         <div class="contact-section">
             <div class="contact-item">
                 <a href="tel:+3398633080"><i class="fas fa-phone-alt"></i> 09 86 23 30 80</a>
@@ -31,40 +32,37 @@
                 <a href="mailto:cedric.luquet@groupesystea.com"><i class="fas fa-envelope"></i> cedric.luquet@groupesystea.com</a>
             </div>
             <div class="contact-item">
-                <a href="https://www.linkedin.com/in/cédric-luquet" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/cédric-luquet</a>
+                <a href="https://www.linkedin.com/in/cedric-luquet" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/cédric-luquet</a>
             </div>
             <div class="contact-item">
-                <a href="https://http://www.namixis.net/" target="_blank"><i class="fas fa-globe"></i> www.namixis.net</a>
+                <a href="http://www.namixis.net/" target="_blank"><i class="fas fa-globe"></i>http://www.namixis.net/</a>
             </div>
         </div>
-
-        <a href="cedric-luquet.vcf" download="cedric-luquet.vcf" class="vcardd"><button class="btn-vcard"><i class="fas fa-download"></i> Télécharger vCard</button></a>
+        <a href="cedric-luquet.vcf" download="cédric-luquet.vcf" class="vcardd"><button class="btn-vcard"><i class="fas fa-download"></i> Télécharger vCard</button></a>
     </div>
     <!-- Contenu de la vCard -->
-    <a id="vcard-content" style="display: none;" charset="UTF-8">BEGIN:VCARD
+    <a id="vcard-content" style="display: none;">BEGIN:VCARD
 VERSION:3.0
+CHARSET:UTF-8
 FN:Cédric Luquet
+N:Luquet;Cédric;;;
 ORG:Namixis & SSICoor
 TITLE:Coordinateur SSI / Chargé d'Affaires
-TEL;TYPE=work,voice:+33 6 33 02 92 07
-EMAIL;TYPE=internet:cedric.luquet@groupesystea.com
+TEL;TYPE=WORK,VOICE:+33 9 86 23 30 80
+TEL;TYPE=CELL,VOICE:+33 6 33 02 92 07
+EMAIL;TYPE=INTERNET:cedric.luquet@groupesystea.com
 URL:https://www.namixis.com
+ADR;TYPE=WORK:;;605 avenue des Romarins;Saint-Aunès;;34130;France
 END:VCARD</a>
-        
     <script>
         // Générer et télécharger la vCard dynamiquement
         const downloadLink = document.querySelector('.vcardd');
         const vCardContent = document.querySelector('#vcard-content').textContent;
-
         // Créer un fichier blob contenant le texte de la vCard
-        const blob = new Blob([vCardContent], { type: 'text/vcard' });
+        const blob = new Blob([vCardContent], { type: 'text/vcard;charset=utf-8' });
         const url = URL.createObjectURL(blob);
-
         // Mettre à jour le lien de téléchargement avec l'URL du blob
         downloadLink.href = url;
     </script>
-        
-    <script src="script.js"></script>
-
 </body>
 </html>

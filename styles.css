@@ -9,7 +9,6 @@ body {
     padding: 20px;
 }
 
-
 .card-container {
     background: linear-gradient(135deg, #ffffff, #f7f7f7);
     padding: 40px;
@@ -56,7 +55,7 @@ body {
 
 
 .logo img {
-    width: 360px; 
+    width: 260px; 
     margin-bottom: 20px;
     border-radius: 40%;
     transition: transform 0.4s ease;
@@ -96,33 +95,47 @@ body {
     margin: 20px 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch; 
+    width: 100%; 
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     font-size: 16px;
     color: #2c3e50;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 10px 20px; 
     width: 100%;
     transition: all 0.3s ease;
+    box-sizing: border-box; 
 }
 
 .contact-item i {
     font-size: 20px;
-    
     margin-right: 10px;
     color: #3498db;
+    width: 20px; 
+    text-align: center; 
 }
+
 .contact-item a {
     color: #34495e;
     text-decoration: none;
     font-size: 16px;
-    margin-bottom: 10px;
     font-weight: 600;
+    flex-grow: 1;
+    text-align: left; 
+}
+
+.contact-item:hover {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    color: #2980b9;
+}
+
+.contact-item:hover i {
+    color: #1abc9c;
 }
 
 
@@ -164,72 +177,75 @@ body {
     margin-right: 8px;
 }
 
+
+
 @media (max-width: 768px) {
     .card-container {
-        padding: 30px;
+        padding: 50px;
     }
 
     .logo img {
-        width: 140px; 
+        width: 180px;
     }
 
     .card-info h2 {
-        font-size: 22px;
+        font-size: 26px;
     }
 
     .job-title {
-        font-size: 16px;
-    }
-
-    .company-address {
-        font-size: 14px;
-    }
-
-    .contact-item {
-        font-size: 14px;
-    }
-
-    .contact-item i {
-        font-size: 18px;
-    }
-
-    .btn-vcard {
-        padding: 12px 30px;
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .card-container {
-        padding: 20px;
-    }
-
-    .logo img {
-        width: 120px; 
-    }
-
-    .card-info h2 {
         font-size: 20px;
     }
 
-    .job-title {
-        font-size: 14px;
-    }
-
     .company-address {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .contact-item {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .contact-item i {
-        font-size: 16px;
+        font-size: 24px;
     }
 
     .btn-vcard {
-        padding: 10px 25px;
-        font-size: 12px;
+        padding: 18px 50px;
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .card-container {
+        padding: 40px;
+    }
+
+    .logo img {
+        width: 160px;
+    }
+
+    .card-info h2 {
+        font-size: 24px;
+    }
+
+    .job-title {
+        font-size: 18px;
+    }
+
+    .company-address {
+        font-size: 16px;
+    }
+
+    .contact-item {
+        font-size: 16px;
+    }
+
+    .contact-item i {
+        font-size: 22px;
+    }
+
+    .btn-vcard {
+        padding: 16px 40px;
+        font-size: 16px;
     }
 }
